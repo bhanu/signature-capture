@@ -12,8 +12,7 @@ class SignatureController < Rho::RhoController
 
   # GET /Signature/new
   def new
-    SignatureTool::take_signature(url_for( :action => :signature_callback), 'jpg')
-    render :action => :new, :back => url_for(:action => :index)
+    SignatureTool::take_signature(url_for(:action => :signature_callback), 'jpg')
   end
 
   def signature_callback
@@ -29,6 +28,6 @@ class SignatureController < Rho::RhoController
   def delete
     @signature = Signature.find(@params['id'])
     @signature.destroy if @signature
-    redirect :action => :index  
+    redirect :action => :index
   end
 end

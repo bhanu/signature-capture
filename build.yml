@@ -1,8 +1,7 @@
 --- 
 extensions: 
 - json
-- barcode
-name: barcode-signature
+name: Signature Capture
 capabilities: 
 - camera
 wp: 
@@ -18,9 +17,9 @@ symbian:
 vendor: rhomobile
 sdkversion: 3.1.0
 iphone: 
-  BundleURLScheme: barcode-signature
+  BundleURLScheme: signature-capture
   provisionprofile: 
-  BundleIdentifier: com.rhomobile.barcode-signature
+  BundleIdentifier: com.rhomobile.signature-capture
   sdk: iphonesimulator4.3
   entitlements: 
   codesignidentity: 
